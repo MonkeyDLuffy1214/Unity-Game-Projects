@@ -1,2 +1,24 @@
 # Auto detect text files and perform LF normalization
-* text=auto
+# Normalize line endings for text files
+*.cs text
+*.shader text
+*.json text
+*.txt text
+*.xml text
+*.asmdef text
+*.cginc text
+
+# Binary files (do not modify line endings)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.fbx binary
+*.unity binary
+*.prefab binary
+*.dll binary
+*.mp3 binary
+*.wav binary
+
+# Make sure .bat and .sh files get correct line endings
+*.bat text eol=crlf
+*.sh text eol=lf
